@@ -1,5 +1,5 @@
 # DEPRECATED
-We would like for you to start using the new [github-pr-resource](https://github.com/telia-oss/github-pr-resource) that is based on Github's GraphQL resources. Using GraphQL fixes a lot of issues this repo has. 
+We would like for you to start using the new [github-pr-resource](https://github.com/telia-oss/github-pr-resource) that is based on Github's GraphQL resources. Using GraphQL fixes a lot of issues this repo has.
 
 For history or context regarding this change, please see this [issue](https://github.com/telia-oss/github-pr-resource/issues/34).
 
@@ -91,6 +91,9 @@ marked with that specific label. It is case insensitive.
   files are ignored.
 
 * `ci_skip`: *Optional.* Filters out PRs that have `[ci skip]` message. Default
+   is `false`.
+
+* `no_wip`: *Optional.* Filters out PRs that have `[WIP]` in the title. Default
    is `false`.
 
 * `skip_ssl_verification`: *Optional.* Skips git ssl verification by exporting

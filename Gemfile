@@ -17,6 +17,7 @@ end
 
 group :test do
   gem 'puffing-billy'
+  gem 'bigdecimal'
   gem 'rspec'
   gem 'webmock'
 end

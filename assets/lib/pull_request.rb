@@ -43,6 +43,10 @@ class PullRequest
     @pr['number']
   end
 
+  def title
+    Octokit.pull_request(base_repo, id)['title']
+  end
+
   def sha
     @pr['head']['sha']
   end
